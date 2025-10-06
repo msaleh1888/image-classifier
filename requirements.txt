@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+numpy>=1.21
+matplotlib>=3.5
+Pillow>=9.0
+packaging>=21.3
+jupyter
+jupyterlab
