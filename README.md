@@ -95,15 +95,19 @@ Top 5 Predictions:
 ```
 Image_Classifier_Project/
 ├── data/                      # Training and validation datasets
+├── cat_to_name.json           # Mapping from category labels to flower names
 ├── train.py                   # Training script
 ├── predict.py                 # Inference script
 ├── model.py                   # Model architecture definition
 ├── dataloaders.py             # Dataset loading utilities
 ├── utility_functions.py       # Helper functions for image processing and visualization
 ├── checkpoint.pth             # Example trained model checkpoint
-├── demo.ipynb        # Polished demo notebook
+├── demo.ipynb                 # Demo notebook
+|
 ├── requirements.txt           # Dependencies list
-└── README.md                  # Project documentation
+├── LICENSE                    # MIT License
+├── CHANGELOG.md               # Version history and release notes
+└── README.md                  # Project documentation (this file)
 ```
 
 ---
@@ -122,6 +126,21 @@ packaging>=23.0
 
 ---
 
+## Changelog
+
+See **[CHANGELOG.md](CHANGELOG.md)** for a detailed version history.
+
+### Latest Version: `v1.0.0`
+Released: *October 6, 2025*
+
+#### Initial Release
+- Added full project code and demo notebook  
+- Implemented GPU support and Top-K visualization  
+- Included MIT License and project documentation  
+- Added versioning with `v1.0.0` tag
+
+---
+
 ## License
 This project is released under the **MIT License**.  
 You are free to use, modify, and distribute it with proper attribution.  
@@ -129,3 +148,13 @@ You are free to use, modify, and distribute it with proper attribution.
 ---
 
 > *Developed by Mahmoud Saleh — Flower Image Classifier Project (2025)*
+
+---
+
+## Acknowledgements
+
+- **Udacity AI Programming with Python Nanodegree** — for providing the foundational structure of this project.  
+- **Oxford Visual Geometry Group (VGG)** — for the [Oxford 102 Flower Dataset](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/).  
+- **PyTorch** — for its flexible deep learning framework used throughout model training and inference.  
+- **Matplotlib** — for visualization and Top-K probability plots.  
+- **Community Tutorials & Open-Source Contributors** — for inspiration and practical implementation patterns.
