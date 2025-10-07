@@ -36,11 +36,10 @@ idx_to_class = {v: k for k, v in class_to_idx.items()}  # reverse
 top_labels = [idx_to_class[int(i)] for i in top_idx_list]       # labels like '14','61',...
 
 top_names = [cat_to_name.get(lbl, lbl) for lbl in top_labels]
-top_classes = [cat_to_name[str(i)] for i in top_idx_list]
-top_probs = top_p[0]
+top_probs = [float(p) for p in top_p[0]]
 
-print("The most likely class is : {}".format(top_classes[0]))
+print("The most likely class is : {}".format(top_names[0]))
 print("The associated probability is: {}".format(top_probs[0]))
 
-print("The top {} classes are: {}".format(args.topk, top_classes))
+print("The top {} classes are: {}".format(args.topk, top_names))
 print("The associated probabilities are: {}".format(top_probs))
