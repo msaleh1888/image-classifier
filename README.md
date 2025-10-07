@@ -59,7 +59,7 @@ python train.py --model_arch vgg --hidden_units 512 --lr 0.0001 --epochs 5 --dev
 ### Predict an Image Class
 Use a trained checkpoint to predict the top‑K classes for a new image:
 ```bash
-python predict.py --image_path data/test/76/image_02472.jpg --checkpoint_path checkpoint.pth --topk 5 --device cpu
+python predict.py --image_path data/test/1/image_06743.jpg --checkpoint_path checkpoint.pth --topk 5 --device cpu
 ```
 
 ---
@@ -101,7 +101,7 @@ Image_Classifier_Project/
 ├── dataloaders.py             # Dataset loading utilities
 ├── utility_functions.py       # Helper functions for image processing and visualization
 ├── checkpoint.pth             # Example trained model checkpoint
-├── demo_polished.ipynb        # Polished demo notebook
+├── demo.ipynb        # Polished demo notebook
 ├── requirements.txt           # Dependencies list
 └── README.md                  # Project documentation
 ```
